@@ -79,7 +79,7 @@
                         <div class="flex gap-3 items-center justify-center">
                             <span class="text-xl">Life</span>
                             <img class="w-6" src="images/heart-regular (1).svg" alt="">
-                            <span id="life" class="text-xl">5</span>
+                            <span id="current-life" class="text-xl">5</span>
                         </div>
                     </button>
                     <!-- btn-2 -->
@@ -96,14 +96,15 @@
         </section>
         <!-- playground end -->
         <!-- Final score start -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-12 rounded-xl">
+                <h4 class="text-4xl font-bold text-yellow-300">Game Over!!</h4>
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
                     <span>14</span>
 
                 </h1>
-                <button class="btn">Play again</button>
+                <button onclick="play()" class="btn">Play again</button>
                 <p>Practice will make you a Pro</p>
             </div>
         </section>
